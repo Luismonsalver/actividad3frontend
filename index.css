@@ -13,7 +13,7 @@ body {
   }
 
 #cuerpo {
-    width: 960px;
+    width: 1000px;
     margin: auto;
     border: 1px solid black;
   }
@@ -31,10 +31,10 @@ body {
 
 .nav {
   background-color: #E4E0E0;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   padding-left: 10px;
-  font-size: 23px;
+  font-size: 20px;
   font-family: Georgia;
 }
 
@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   color: white;
   background-color: gray;
+  border-radius: 6px;
 }
 
 .linkSesion {
@@ -58,4 +59,15 @@ body {
   text-decoration: none;
   color: white;
   background-color: gray;
+  border-radius: 6px;
+}
+
+.piePag {
+background-color:#19270F;
+color:#EFEDED;
+font-family: Arial;
+font-size: 14px;
+padding-top: 28px;
+padding-bottom: 28px;
+padding-left: 37px;
 }
