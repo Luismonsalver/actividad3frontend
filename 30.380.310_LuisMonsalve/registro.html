@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Monsalve">
+    <meta name="description" content="Pagina para el registro de usuario">
+    <title>Diario UVM Sport</title>
+    <link rel="shortcut icon" href="resources/images/logoUVM.png">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>DIARIO UVM SPORT</h1>
+            <img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="10%">
+        </div>
+    </header>
+    <nav>
+        <div>
+            <b><a href="index.html">Volver a la página principal</a></b><br><br>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2>¡Regístrate para que no te pierdas de ninguna noticia!</h2>
+            <form id="formulario">
+                <fieldset>
+                    <legend>Información personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required><br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required><br>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" minlength="5" placeholder="Mínimo 5 caracteres" id="password" name="password" required><br>
+
+                    <label for="opcion">Selecciona tu género:</label><br>
+                    <input type="radio" name="opcion" value="masculino" required> Masculino
+                    <input type="radio" name="opcion" value="femenino"> Femenino
+                    <input type="radio" name="opcion" value="noBinario"> No Binario
+                    <input type="radio" name="opcion" value="sinRespuesta"> Prefiero no decirlo
+                    <br><br>
+                    <input type="checkbox" name="mayorEdad" value="mayorEdad" required>Confirmo que tengo más de 18 años
+                </div>
+                </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <div>
+                    <label for="ligaFav">Selecciona tu liga de fútbol favorita (Opcional)</label>
+                        <select id="ligaFav" name="ligaFav">
+                                <option value="sinLiga">No tengo liga favorita</option>
+                            </optgroup>
+                            <optgroup label="TOP 5">
+                                <option value="ligaInglaterra">Premier League (Inglaterra)</option>
+                                <option value="ligaEspana">LaLiga (España)</option>
+                                <option value="ligaAlemania">Bundesliga (Alemania)</option>
+                                <option value="ligaItalia">Serie A (Italia)</option>
+                                <option value="ligaFrancia">Ligue 1 (Francia)</option>
+                            </optgroup>
+                            <optgroup label="OTRAS">
+                                <option value="ligaBrasil">Brasileirão (Brasil)</option>
+                                <option value="ligaArgentina">LPF (Argentina)</option>
+                                <option value="ligaVenezuela">Liga FUTVE (Venezuela)</option>
+                            </optgroup>
+                        </select><br>
+                    <input type="checkbox" name="noticiasCorreo" value="noticiasCorreo">Quiero recibir noticias al correo electrónico
+                </div>
+            </fieldset><br>
+                <div>
+                    <button type="submit" onclick="redireccionar()">Enviar</button><br><br>
+                    <button type="reset">Restablecer datos</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <adress>
+                <p>Información de contacto</p>
+                <ul>
+                    <li><strong>Instagram:</strong> diariouvmsport</li>
+                    <li><strong>Facebook:</strong> Diario UVM Sport</li>
+                    <li><strong>Twitter:</strong> @diariouvmsport</li>
+                    <li><strong>YouTube:</strong> Diario UVM Sport</li>
+                </ul>
+            </adress>
+                <p>Derechos de autor © Junio 2023<br>Luis Monsalve C.I. 30.380.310</p>
+            </div>
+    </footer>
+</body>
+</html>
