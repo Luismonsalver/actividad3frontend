@@ -34,8 +34,7 @@ body {
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 10px;
-    font-size: 20px;
-    font-family: Georgia;
+    font: bold 20px Georgia;
   }
   
   .volverLink{
@@ -54,8 +53,7 @@ body {
   .piePag {
     background-color:#19270F;
     color:#EFEDED;
-    font-family: Arial;
-    font-size: 14px;
+    font: bold 14px Arial;
     padding-top: 28px;
     padding-bottom: 28px;
     padding-left: 37px;
