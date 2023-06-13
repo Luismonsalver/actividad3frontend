@@ -14,17 +14,15 @@
 <body>
 <div class="agrupar">
     <header>
-        <div>
             <h1 class="header">
-                <span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px">
+                <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
             </h1>
-        </div>
     </header>
-    <nav class="nav">
-        <a class="linkRegistro" href="registro.html">Regístrate</a>
-        <a class ="linkSesion" href="sesion.html">Inicia sesión</a>
+    <nav>
+        <a href="registro.html">Regístrate</a>
+        <a href="sesion.html">Inicia sesión</a>
     </nav>
-    <div id="cuerpo">
+    <div class="cuerpo">
         <main>  
                 <article>
                     <h2>Messi más cerca que nunca de volver al Barcelona</h2>
@@ -34,121 +32,121 @@
                         <img src="resources/images/messi.jpeg" alt="Messi PSG" width="100%">
                         <figcaption class="imagenCap">Messi en su último partido con el PSG.</figcaption>
                     </figure>
-                    <p><strong>Jorge Messi y Joan Laporta se reunieron hoy para tratar de llegar a un acuerdo. </strong>Leo Messi y el FC Barcelona están aprovechando 
-                        una última oportunidad. A pesar de que el Al-Hilal saudí había dado por cerrado su fichaje como agente libre con un salario exorbitante, y el 
-                        Inter de Miami había aumentado su oferta creyendo que tenía serias posibilidades de incorporar al exjugador azulgrana, Jorge Messi 
-                        (padre de Leo) y Joan Laporta (presidente del FC Barcelona) se reunieron esta mañana durante aproximadamente treinta minutos.<br><br>
-                        La reunión tuvo lugar en la residencia del máximo dirigente del Barcelona, que se encuentra cerca de la oficina profesional de los Messi en Barcelona. 
-                        Durante este encuentro, ambas partes aprovecharon la oportunidad de explorar las opciones para llegar a un acuerdo que permita el regreso de Leo al FC Barcelona.</p>
-                    <blockquote>
-                        <p>Jorge Messi tras reunirse con el presidente del Barcelona, Laporta: “Leo quiere volver a Barcelona y me encantaría verlo de vuelta en el Barça”.</p>
-                        <cite>Fabrizio Romano</cite>
-                    </blockquote>
-                    <p>Además, como es evidente, Messi pasaría a ser el jugador mejor pagado de la plantilla del Barcelona, ahora mismo en el club los futbolistas mejores pagados del equipo son los siguientes:</p>
-                    <ol>
-                        <li>Marc-André ter Stegen</li>
-                        <li>Robert Lewandowski</li>
-                        <li>Ousmane Dembélé </li>
-                        <li>Franck Kessié</li>
-                        <li>Jules Koundé</li>
-                    </ol>
-                    <figure class="video">
-                        <video src="resources/videos/messigol.mp4" controls></video>
-                        <figcaption class="videoCaption">Último gol de Messi con el club parisino.</figcaption>
-                    </figure>
-                    <form>
-                        <label for="mensaje">Deja tu comentario</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-                        <button type="submit">Enviar</button>
-                </form>
+                    <div class="noticia">
+                        <p><strong>Jorge Messi y Joan Laporta se reunieron hoy para tratar de llegar a un acuerdo. </strong>Leo Messi y el FC Barcelona están aprovechando 
+                            una última oportunidad. A pesar de que el Al-Hilal saudí había dado por cerrado su fichaje como agente libre con un salario exorbitante, y el 
+                            Inter de Miami había aumentado su oferta creyendo que tenía serias posibilidades de incorporar al exjugador azulgrana, Jorge Messi 
+                            (padre de Leo) y Joan Laporta (presidente del FC Barcelona) se reunieron esta mañana durante aproximadamente treinta minutos.<br><br>
+                            La reunión tuvo lugar en la residencia del máximo dirigente del Barcelona, que se encuentra cerca de la oficina profesional de los Messi en Barcelona. 
+                            Durante este encuentro, ambas partes aprovecharon la oportunidad de explorar las opciones para llegar a un acuerdo que permita el regreso de Leo al FC Barcelona.</p>
+                        <blockquote>
+                            <div class="cita">
+                                <p>Jorge Messi tras reunirse con el presidente del Barcelona, Laporta: “Leo quiere volver a Barcelona y me encantaría verlo de vuelta en el Barça”.</p>
+                                <cite>Fabrizio Romano</cite>
+                            </div>
+                        </blockquote>
+                        <p>Además, como es evidente, Messi pasaría a ser el jugador mejor pagado de la plantilla del Barcelona, ahora mismo en el club los futbolistas mejores pagados del equipo son los siguientes:</p>
+                        <ol>
+                            <li>Marc-André ter Stegen</li>
+                            <li>Robert Lewandowski</li>
+                            <li>Ousmane Dembélé </li>
+                            <li>Franck Kessié</li>
+                            <li>Jules Koundé</li>
+                        </ol>
+                        <figure class="video">
+                            <video src="resources/videos/messigol.mp4" controls></video>
+                            <figcaption class="videoCaption">Último gol de Messi con el club parisino.</figcaption>
+                        </figure>
+                        <div class="comentarios">
+                            <form class="cajaComentarios">
+                                <label for="mensaje">Deja tu comentario</label><br>
+                                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                                <button type="submit">Enviar</button>
+                            </form>
+                            <p class="comentariosPersonas">COMENTARIOS (0)</p>
+                        </div>
+                    </div>
                 </article>
-                <section>
-                    <style>
-                        table
-                        td:nth-child(1),
-                        td:nth-child(3),
-                        td:nth-child(4),
-                        td:nth-child(5),
-                        td:nth-child(6),
-                        td:nth-child(7) {
-                        text-align: center;
-                        }
-                    </style>
-
-                    <table>
-                        <caption>Tabla de posiciones de la Premier League</caption>
-                        <thead>
-                            <tr>
-                                <th>POS</th>
-                                <th>EQUIPO</th>
-                                <th>PJ</th>
-                                <th>V</th>
-                                <th>E</th>
-                                <th>D</th>
-                                <th>PTS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Manchester City</td>
-                                <td>38</td>
-                                <td>28</td>
-                                <td>5</td>
-                                <td>5</td>
-                                <td>89</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Arsenal</td>
-                                <td>38</td>
-                                <td>26</td>
-                                <td>6</td>
-                                <td>6</td>
-                                <td>84</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Manchester United</td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>6</td>
-                                <td>9</td>
-                                <td>75</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Newcastle United</td>
-                                <td>38</td>
-                                <td>19</td>
-                                <td>14</td>
-                                <td>5</td>
-                                <td>71</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Liverpool</td>
-                                <td>38</td>
-                                <td>19</td>
-                                <td>10</td>
-                                <td>9</td>
-                                <td>67</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="2">Los primeros 4 de la<br> tabla clasifican a<br> la Champions League</th>
-                                <td colspan="5"><b>PJ: </b>Partidos Jugados<br><b>V: </b>Victorias<br><b>E: </b>Empates<br><b>D: </b>Derrotas<br><b>PTS: </b>Puntos</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </section>
-        </main>
-        <aside>
-            <div class="otraNoticia">
-                <a href="otranoticia.html">Max Verstappen gana el GP de España y aumenta su ventaja como líder<img src="resources/images/verstappen.jpg" alt="Verstappen" width="100%"></a>
-            </div>
-        </aside>
+                <div class="columna">
+                    <section>
+                        <div class="tabla">
+                            <table>
+                                <caption>Tabla de posiciones de la Premier League</caption>
+                                <thead>
+                                    <tr>
+                                        <th>POS</th>
+                                        <th>EQUIPO</th>
+                                        <th>PJ</th>
+                                        <th>V</th>
+                                        <th>E</th>
+                                        <th>D</th>
+                                        <th>PTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Manchester City</td>
+                                        <td>38</td>
+                                        <td>28</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Arsenal</td>
+                                        <td>38</td>
+                                        <td>26</td>
+                                        <td>6</td>
+                                        <td>6</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Manchester United</td>
+                                        <td>38</td>
+                                        <td>23</td>
+                                        <td>6</td>
+                                        <td>9</td>
+                                        <td>75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Newcastle United</td>
+                                        <td>38</td>
+                                        <td>19</td>
+                                        <td>14</td>
+                                        <td>5</td>
+                                        <td>71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Liverpool</td>
+                                        <td>38</td>
+                                        <td>19</td>
+                                        <td>10</td>
+                                        <td>9</td>
+                                        <td>67</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="2">Los primeros 4 de la<br> tabla clasifican a<br> la Champions League</th>
+                                        <td colspan="5"><b>PJ: </b>Partidos Jugados<br><b>V: </b>Victorias<br><b>E: </b>Empates<br><b>D: </b>Derrotas<br><b>PTS: </b>Puntos</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+            </main>
+            <aside>
+                <div class="ultimasNoticias">
+                    <h3>ÚLTIMAS NOTICIAS</h3>
+                    <a href="otranoticia.html">Max Verstappen gana el GP de España y aumenta su ventaja como líder<img src="resources/images/verstappen.jpg" alt="Verstappen" width="100%"></a>
+                </div>
+            </aside>
+        </div>
     </div>
     <footer>
         <p class="piePag">© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</p>
