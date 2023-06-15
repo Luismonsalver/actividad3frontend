@@ -15,10 +15,10 @@ body {
   }
   
 .sport {
-    color:white
+    color:#ffff
   }
 
-header {
+header .cabecera{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -53,18 +53,33 @@ header .links a {
   margin-right: 10px;
   margin-left: 10px;
   text-decoration: none;
-  color: white;
+  color: #ffff;
   background-color: #515A5A;
   border-radius: 2px;
 }
 
 nav .categorias {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font: bold 20px Rockwell;
   color: #1C2833;
   margin:0;
   padding: 10px;
   background-color: #D5D8DC;
+}
+
+nav .categorias li {
+  list-style: none;
+}
+
+nav .categorias a {
+  text-decoration: none;
+  color: #1C2833;
+}
+
+nav .categorias li:not(:last-child)::after {
+  content: "•";
+  margin: 0 10px;
 }
 
 .divisor {
@@ -136,7 +151,7 @@ figcaption {
 }
 
 .noticia blockquote {
-  border: 4px solid darkgray;
+  border: 4px solid #a9a9a9;
 }
 
 .noticia blockquote .cita {
@@ -155,7 +170,7 @@ figcaption {
 }
 
 .video video {
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 
@@ -170,7 +185,13 @@ figcaption {
 
 .comentarios {
   width: 100%;
+}
+
+.comentarios .cajaComentarios {
   margin-top: 20px;
+  padding: 10px 0 15px 0;
+  border-top: 1px solid #1C2833;
+  border-bottom: 1px dashed #1C2833;
 }
 
 .comentarios label {
@@ -180,48 +201,120 @@ figcaption {
 .comentarios textarea {
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 5px;
   padding: 0;
+  resize: none;
+  border:1px solid #1C2833
 }
 
+.comentarios button {
+  font:600 15px Calibri;
+  background-color: #ffff;
+  color: #1C2833;
+  border: 1px solid #1C2833;
+  border-radius: 3px;
+}
 
 .comentarios .comentariosPersonas {
   text-align: center;
 }
 
 aside {
-  padding-top: 15px;
+  padding-top: 10px;
   width: 30%;
   height: 100%;
 }
 
-.tabla table
-  td:nth-child(1),
-  td:nth-child(3),
-  td:nth-child(4),
-  td:nth-child(5),
-  td:nth-child(6),
-  td:nth-child(7) {
+.tabla {
+  font-family: 'Segoe UI';
+  border: 1px solid #ddd;
+  background-color: #f8f7f7;
+}
+
+.tabla table {
+  border-spacing: 0;
+}
+
+.tabla caption {
+  font-weight: bold;
+}
+
+.tabla caption, .tabla thead tr th, .tabla tbody tr td {
+  border-bottom:2px solid #ddd;
+  padding: 3px;
+}
+
+.tabla thead tr th {
+  background-color: #f1f1f1;
+}
+
+.tabla .destacadoTabla {
+  background-color: #78AD22;
+  color: #f8f7f7
+}
+
+.tabla .equipos a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1C2833;
+}
+
+.tabla .puntos {
+  background-color: #1C2833;
+  color: #f8f7f7;
+}
+
+.tabla>table>thead>tr, .tabla>table>tbody>tr {
+  display: table-row;
   text-align: center;
-  }
+}
+
+/* .tabla table
+  td:nth-child(2) {
+  text-align: left;
+  } */
+
+.tabla .pieTabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.tabla li {
+  list-style: none;
+  margin-right: 5px;
+}
 
 .ultimasNoticias h3 {
   color:#78AD22;
   font-family: Rockwell;
   font-size: 27px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   border-top: 1px solid #78AD22;
   border-bottom: 1px solid #78AD22;
   padding: 5px 0 5px 0
 }
 
 .ultimasNoticias img {
-  margin:10px 0 5px 0;
+  margin:20px 0 5px 0;
+}
+
+.ultimasNoticias ul {
+  display: flexbox;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.ultimasNoticias li {
+  list-style: none;
 }
 
 .ultimasNoticias a {
-  color: black;
-  text-decoration: none;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Trebuchet MS';
 }
@@ -250,7 +343,6 @@ margin-bottom: 0;
 }
 
 .contacto ul {
-  display: inline;
   margin: 0;
 }
 
@@ -273,6 +365,6 @@ margin-bottom: 0;
 
 .contacto a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   display: inline-flex;
 }

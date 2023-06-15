@@ -13,18 +13,27 @@
 </head>
 <body>
     <header>
-        <h2 class="nombrePagina">
-            <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
-        </h2>
-        <div class="links">
-            <a href="registro.html">Regístrate</a>
-            <a href="sesion.html">Inicia sesión</a>
+        <div class="cabecera">
+            <h2 class="nombrePagina">
+                <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+            </h2>
+            <div class="links">
+                <a href="registro.html">Regístrate</a>
+                <a href="sesion.html">Inicia sesión</a>
+            </div>
         </div>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#">FÚTBOL</a></li>
+                <li><a href="#">BÁSQUETBOL</a></li>
+                <li><a href="#">BÉISBOL</a></li>
+                <li><a href="#">AUTOMOVILISMO</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">ATLETISMO</a></li>
+                <li><a href="#">HOCKEY</a></li>
+              </ul>
+        </nav>
     </header>
-    <nav>
-
-        <p class="categorias">FÚTBOL • BÁSQUETBOL • BÉISBOL • AUTOMOVILISMO • TENIS • ATLETISMO • HOCKEY</p>
-    </nav>
         <main>
                     <article>
                         <div class="tituloArticulo">
@@ -65,11 +74,11 @@
                                 </figure>
                                 <div class="comentarios">
                                     <form class="cajaComentarios">
-                                        <label for="mensaje">Deja tu comentario</label><br>
-                                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                                        <label for="mensaje">Deja tu comentario</label>
+                                        <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Puedes escribir hasta 100 caracteres" required></textarea>
                                         <button type="submit">Enviar</button>
                                     </form>
-                                    <p class="comentariosPersonas">COMENTARIOS ()</p>
+                                    <p class="comentariosPersonas">Comentarios ()</p>
                                 </div>
                             </div>
                             <aside>
@@ -84,68 +93,79 @@
                                                 <th>V</th>
                                                 <th>E</th>
                                                 <th>D</th>
-                                                <th>PTS</th>
+                                                <th class="destacadoTabla">PTS</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Manchester City</td>
+                                                <td class="equipos"><a href="#">M. City</a></td>
                                                 <td>38</td>
                                                 <td>28</td>
                                                 <td>5</td>
                                                 <td>5</td>
-                                                <td>89</td>
+                                                <td class="puntos">89</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>Arsenal</td>
+                                                <td class="equipos"><a href="#">Arsenal</a></td>
                                                 <td>38</td>
                                                 <td>26</td>
                                                 <td>6</td>
                                                 <td>6</td>
-                                                <td>84</td>
+                                                <td class="puntos">84</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>Manchester United</td>
+                                                <td class="equipos"><a href="#">M. United</a></td>
                                                 <td>38</td>
                                                 <td>23</td>
                                                 <td>6</td>
                                                 <td>9</td>
-                                                <td>75</td>
+                                                <td class="puntos">75</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>Newcastle United</td>
+                                                <td class="equipos"><a href="#">Newcastle</a></td>
                                                 <td>38</td>
                                                 <td>19</td>
                                                 <td>14</td>
                                                 <td>5</td>
-                                                <td>71</td>
+                                                <td class="puntos">71</td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
-                                                <td>Liverpool</td>
+                                                <td class="equipos"><a href="#">Liverpool</a></td>
                                                 <td>38</td>
                                                 <td>19</td>
                                                 <td>10</td>
                                                 <td>9</td>
-                                                <td>67</td>
+                                                <td class="puntos">67</td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th colspan="2">Los primeros 4 de la<br> tabla clasifican a<br> la Champions League</th>
-                                                <td colspan="5"><b>PJ: </b>Partidos Jugados<br><b>V: </b>Victorias<br><b>E: </b>Empates<br><b>D: </b>Derrotas<br><b>PTS: </b>Puntos</td>
+                                                <td colspan="7">
+                                                    <ul class="pieTabla">
+                                                        <li><strong>POS: </strong>Posición</li>
+                                                        <li><strong>PJ: </strong>Partidos Jugados</li>
+                                                        <li><strong>V: </strong>Victorias</li>
+                                                        <li><strong>E: </strong>Empates</li>
+                                                        <li><strong>D: </strong>Derrotas</li>
+                                                        <li><strong>PTS: </strong>Puntos</li>
+                                                    </ul>
+                                                </td>
                                             </tr>
                                         </tfoot>
                                     </table>
                                 </div>
-                    <div class="ultimasNoticias">
-                        <h3>ÚLTIMAS NOTICIAS</h3>
-                        <a href="otranoticia.html"><img src="resources/images/verstappen.jpg" alt="Verstappen" width="100%">Max Verstappen gana el GP de España y aumenta su ventaja como líder</a>
-                    </div>
+                                <div class="ultimasNoticias">
+                                    <h3>ÚLTIMAS NOTICIAS</h3>
+                                    <ul>
+                                        <li><a href="otranoticia.html"><img src="resources/images/verstappen.jpg" alt="Verstappen" width="100%">Max Verstappen gana el GP de España y aumenta su ventaja como líder</a></li>
+                                        <li><a href="#"><img src="resources/images/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Denver Nuggets ganan su primer título de la NBA</a></li>
+                                    </ul>
+                                </div>
                             </aside>
                         </section>
                         

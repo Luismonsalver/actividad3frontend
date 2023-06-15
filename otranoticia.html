@@ -13,16 +13,26 @@
 </head>
 <body>
     <header>
-        <h2 class="nombrePagina">
-            <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
-        </h2>
-        <div class="links">
-            <a href="index.html">Volver a la página principal</a>
+        <div class="cabecera">
+            <h2 class="nombrePagina">
+                <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+            </h2>
+            <div class="links">
+                <a href="index.html">Volver a la página principal</a>
+            </div>
         </div>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#">FÚTBOL</a></li>
+                <li><a href="#">BÁSQUETBOL</a></li>
+                <li><a href="#">BÉISBOL</a></li>
+                <li><a href="#">AUTOMOVILISMO</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">ATLETISMO</a></li>
+                <li><a href="#">HOCKEY</a></li>
+              </ul>
+        </nav>
     </header>
-    <nav>
-        <p class="categorias">FÚTBOL • BÁSQUETBOL • BÉISBOL • AUTOMOVILISMO • TENIS • ATLETISMO • HOCKEY</p>
-    </nav>
         <main>
                     <article>
                         <div class="tituloArticulo">
@@ -63,8 +73,8 @@
                                   </figure>
                                 <div class="comentarios">
                                     <form class="cajaComentarios">
-                                        <label for="mensaje">Deja tu comentario</label><br>
-                                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                                        <label for="mensaje">Deja tu comentario</label>
+                                        <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Puedes escribir hasta 100 caracteres" required></textarea>
                                         <button type="submit">Enviar</button>
                                     </form>
                                     <p class="comentariosPersonas">COMENTARIOS ()</p>
