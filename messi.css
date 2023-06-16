@@ -330,6 +330,33 @@ aside {
   color: #000000;
   font-weight: bold;
   font-family: 'Trebuchet MS';
+  text-decoration: none;
+}
+
+.ultimasNoticias article {
+  margin-bottom: 5px;
+}
+
+.pieArticulo {
+  display: flex;
+}
+
+.pieArticulo p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.pieArticulo .categoriaArticulo {
+  word-wrap: break-word;
+  color:#364D62;
+  font-weight: bold;
+  font-family: Georgia;
+  margin-right: 5px;
+}
+
+.pieArticulo .fechaArticulo {
+  color: #85929E;
+  font-family: Arial;
 }
 
 .piePag {
