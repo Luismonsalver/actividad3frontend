@@ -11,11 +11,11 @@ body {
     }
   
   .uvm {
-      color:#88C426
+      color:#88C426;
     }
     
   .sport {
-      color:#ffff
+      color:#ffff;
     }
   
   header .cabecera{
@@ -83,9 +83,11 @@ body {
   } 
 
   h1 {
+    font-family: Calibri;
     padding-bottom: 15px;
     border-bottom: 2px solid #1C2833;
     text-align: center;
+    color:#4e6c1e;;
   }
 
   .panel {
@@ -160,13 +162,44 @@ body {
   }
 
   .textoLateral a {
-        display: block;
-        text-decoration: none;
-        color:#1C2833;
+    display: block;
+    text-decoration: none;
+    color:#1C2833;
   }
 
   .general {
+    margin-top: 15px;
     width: 70%;
+    border-top: 2px solid #cfcdcd;
+    border-left: 2px solid #cfcdcd;
+  }
+
+  .general ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .general li {
+    padding: 13px 13px 0;
+    width: calc(50% - 27.6px);
+    list-style: none;
+    border-right: 2px solid #cfcdcd;
+    border-bottom: 2px solid #cfcdcd;
+  }
+
+  .general .generalTexto {
+    padding: 5px 20px 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font: bold 17px Segoe UI;
+  }
+
+  .general a {
+    display: block;
+    text-decoration: none;
+    color:#1C2833;
   }
 
   .piePag {
