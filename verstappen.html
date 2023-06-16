@@ -9,7 +9,7 @@
     <title>Diario UVM Sport</title>
     <link rel="shortcut icon" href="resources/images/logoUVM.png">
     <script src="scripts.js"></script>
-    <link rel="stylesheet" href="otranoticia.css">
+    <link rel="stylesheet" href="verstappen.css">
 </head>
 <body>
     <header>
@@ -42,21 +42,22 @@
                             <p class="fecha"><small>Publicado el <time datetime="2023-05-06" pubdate>06 de mayo de 2023</time></small></p>
                         </div>
                         <figure class="imagen">
-                            <img src="resources/images/verstappen.jpg" alt="Verstappen" width="100%">
+                            <img src="resources/images/noticias/verstappen.jpg" alt="Verstappen" width="100%">
                             <figcaption class="imagenCap">Verstappen, además de la victoria también se quedó con la pole y la vuelta rápida de la carrera.</figcaption>
                         </figure>
+                    </article>
                         <section class="divisor">
                             <div class="noticia">
-                                <p><strong>El piloto neerlandés de 25 años se hizo con la victoria número 40 de su carrera y se posiciona para ganar su tercer campeonato de forma consecutiva.</strong><br><br>
-                                    El piloto de Red Bull, Max Verstappen, fortaleció su posición de liderato en el Campeonato Mundial de Pilotos de Fórmula 1 al obtener una victoria clara en el Gran Premio de España, 
+                                <p><strong>El piloto neerlandés de 25 años se hizo con la victoria número 40 de su carrera y se posiciona para ganar su tercer campeonato de forma consecutiva.</strong></p>
+                                <p>El piloto de Red Bull, Max Verstappen, fortaleció su posición de liderato en el Campeonato Mundial de Pilotos de Fórmula 1 al obtener una victoria clara en el Gran Premio de España, 
                                     el séptimo de la temporada, que se llevó a cabo en el circuito de Montmeló (Barcelona). En esta carrera, Verstappen dejó atrás a los dos pilotos de Mercedes, Lewis Hamilton y George Russell, 
                                     quienes ocuparon los lugares de honor.</p>
                                 <p>Con 25 años de edad, Verstappen, quien busca su tercer título consecutivo, logró su cuadragésima victoria en la Fórmula 1 y la quinta de la 
                                     temporada. Dominó la carrera de principio a fin, obteniendo un "<mark>Grand Chelem</mark>" al partir desde la pole position, liderar en cada vuelta y 
                                     marcar la vuelta más rápida en el Circuit de Barcelona-Catalunya. Lewis Hamilton, siete veces campeón mundial, ocupó el segundo lugar, 
                                     seguido por George Russell. El otro automóvil de Red Bull, conducido por el mexicano Checo Pérez, finalizó en cuarto lugar.</p>
-                                    <p>Por otra parte, El piloto mexicano Checo Pérez destacó su cuarto puesto en el Gran Premio de España como un logro notable, especialmente considerando 
-                                        su posición de salida en el undécimo lugar debido a un mal rendimiento el sábado.</p>
+                                <p>Por otra parte, El piloto mexicano Checo Pérez destacó su cuarto puesto en el Gran Premio de España como un logro notable, especialmente considerando 
+                                    su posición de salida en el undécimo lugar debido a un mal rendimiento el sábado.</p>
                                     <blockquote>
                                         <div class="cita">
                                         <p>“Pagamos el mal día de calificación. Estuvimos todo el tiempo un paso detrás de Max y hay que entender el por qué, porque el auto ha sido difícil de manejar el fin de semana. 
@@ -77,7 +78,6 @@
                                         <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Puedes escribir hasta 100 caracteres" required></textarea>
                                         <button type="submit">Enviar</button>
                                     </form>
-                                    <p class="comentariosPersonas">COMENTARIOS ()</p>
                                 </div>
                             </div>
                             <aside>
@@ -86,47 +86,57 @@
                                         <caption>Posiciones de la Fórmula 1 2023</caption>
                                         <thead>
                                           <tr>
+                                            <th>POS</th>
                                             <th>PILOTO</th>
-                                            <th>PTS</th>
+                                            <th class="destacadoTabla">PTS</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td>Max Verstappen</td>
-                                            <td>170</td>
+                                            <td>1</td>
+                                            <td class="nombres"><a href="#">Max Verstappen</a></td>
+                                            <td class="puntos">170</td>
                                           </tr>
                                           <tr>
-                                            <td>Sergio Pérez</td>
-                                            <td>117</td>
+                                            <td>2</td>
+                                            <td class="nombres"><a href="#">Sergio Pérez</a></td>
+                                            <td class="puntos">117</td>
                                           </tr>
                                           <tr>
-                                            <td>Fernando Alonso</td>
-                                            <td>99</td>
+                                            <td>3</td>
+                                            <td class="nombres"><a href="#">Fernando Alonso</a></td>
+                                            <td class="puntos">99</td>
                                           </tr>
                                           <tr>
-                                            <td>Lewis Hamilton</td>
-                                            <td>87</td>
+                                            <td>4</td>
+                                            <td class="nombres"><a href="#">Lewis Hamilton</a></td>
+                                            <td class="puntos">87</td>
                                           </tr>
                                           <tr>
-                                            <td>George Russell</td>
-                                            <td>65</td>
+                                            <td>5</td>
+                                            <td class="nombres"><a href="#">George Russell</a></td>
+                                            <td class="puntos">65</td>
                                           </tr>
                                         </tbody>
                                         <tfoot>
                                           <tr>
-                                            <th colspan="2">Las posiciones se actualizan al término de cada carrera.</th>
+                                            <div class="pieTabla">
+                                                <td colspan="3" class="pieTabla">Las posiciones se actualizan al terminar cada carrera.</td>
+                                            </div>
                                           </tr>
                                         </tfoot>
                                       </table>
                                 </div>
-                    <div class="ultimasNoticias">
-                        <h3>ÚLTIMAS NOTICIAS</h3>
-                        <a href="index.html"><img src="resources/images/messi.jpeg" alt="Verstappen" width="100%">Messi muy cerca de volver al Barcelona</a>
-                    </div>
+                                <div class="ultimasNoticias">
+                                    <h3>ÚLTIMAS NOTICIAS</h3>
+                                    <ul>
+                                        <li><a href="messi.html"><img src="resources/images/noticias/messi.jpeg" alt="Messi" width="100%">Messi muy cerca de volver al Barcelona</a></li>
+                                        <li><a href="#"><img src="resources/images/noticias/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Los Denver Nuggets ganan su primer título de la NBA</a></li>
+                                        <li><a href="#"><img src="resources/images/noticias/djokovic.jpeg" alt="Djokovic" width="100%">Novak Djokovic gana el tercer Roland Garros de su carrera</a></li>
+                                    </ul>
+                                </div>
                             </aside>
                         </section>
-                        
-                    </article>
         </main>
     <footer>
         <p class="piePag">© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</p>
