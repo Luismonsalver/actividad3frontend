@@ -83,11 +83,11 @@ body {
   } 
 
   h1 {
-    font-family: Calibri;
+    font-family: Didot;
     padding-bottom: 15px;
     border-bottom: 2px solid #1C2833;
     text-align: center;
-    color:#4e6c1e;;
+    color:#1C2833;
   }
 
   .panel {
@@ -154,8 +154,12 @@ body {
     height:min-content;
   }
 
+  .lateral article {
+    padding-bottom: 10px;
+  }
+
   .lateral .textoLateral {
-    padding: 5px 20px 20px;
+    padding: 5px 20px 15px;
     box-sizing: border-box;
     word-wrap: break-word;
     font: bold 17px Segoe UI;
@@ -182,15 +186,15 @@ body {
   }
 
   .general li {
-    padding: 13px 13px 0;
+    padding: 13px 13px;
     width: calc(50% - 27.6px);
     list-style: none;
     border-right: 2px solid #cfcdcd;
     border-bottom: 2px solid #cfcdcd;
   }
 
-  .general .generalTexto {
-    padding: 5px 20px 20px;
+  .general .textoGeneral {
+    padding: 5px 20px 15px;
     box-sizing: border-box;
     word-wrap: break-word;
     font: bold 17px Segoe UI;
@@ -200,6 +204,29 @@ body {
     display: block;
     text-decoration: none;
     color:#1C2833;
+  }
+
+  .pieArticulo {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .pieArticulo p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .pieArticulo .categoriaArticulo {
+    word-wrap: break-word;
+    color:#364D62;
+    font-weight: bold;
+    font-family: Georgia;
+    margin-right: 5px;
+  }
+
+  .pieArticulo .fechaArticulo {
+    color: #85929E;
+    font-family: Arial;
   }
 
   .piePag {

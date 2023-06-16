@@ -197,9 +197,13 @@ section .noticia mark {
   
   .comentarios {
     width: 100%;
+  }
+  
+  .comentarios .cajaComentarios {
     margin-top: 20px;
-    padding-top: 10px;
+    padding: 10px 0 15px 0;
     border-top: 1px solid #1C2833;
+    border-bottom: 1px dashed #1C2833;
   }
   
   .comentarios label {
@@ -212,7 +216,6 @@ section .noticia mark {
     padding: 0;
     resize: none;
   }
-  
   
   .comentarios .comentariosPersonas {
     text-align: center;
