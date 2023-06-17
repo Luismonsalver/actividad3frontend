@@ -38,21 +38,21 @@
             <h1>Regístrate para recibir noticias al correo electrónico</h1>
             <form class="formulario" id="formulario">
             <fieldset>
-                    <p class="titulo">Información personal</p>
+                    <h2 class="titulo"><strong>INFORMACIÓN PERSONAL</strong></h2>
 
-                    <p><label for="nombre">Nombre:</label></p>
+                    <p><label for="nombre">Nombre</label></p>
                     <input class="entrada" type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
 
-                    <p><label for="apellido">Apellido:</label></p>
+                    <p><label for="apellido">Apellido</label></p>
                     <input class="entrada" type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
 
-                    <p><label for="email">Email:</label></p>
+                    <p><label for="email">Email</label></p>
                     <input class="entrada" type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
 
-                    <p><input type="checkbox" name="mayorEdad" value="1" required>Confirmo que tengo más de 18 años</p>
+                    <input type="checkbox" name="mayorEdad" value="1" required>Confirmo que tengo más de 18 años
             </fieldset>
             <fieldset>
-                <p class="titulo">Preferencias</p>
+                <h2 class="titulo"><strong>PREFERENCIAS</strong></h2>
                     <p>Selecciona tu deporte favorito</p>
                         <select id="ligaFav" name="deporteFav">
                                 <option value="sinDeporte">No tengo deporte favorito</option>
@@ -66,12 +66,13 @@
                                 <option value="ligaVenezuela">Otro</option>
                         </select>
 
-                        <p>Selecciona tu tipo de contenido favorito:</p>
-                        <input type="radio" name="opcion" value="contenidoCualquiera" required> Cualquiera
-                        <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
-                        <input type="radio" name="opcion" value="contenidoVideos"> Videos
-
-                        <p><input type="checkbox" name="noticiasCorreo" value="1">Quiero recibir ofertas de servicios y productos al correo electrónico</p>
+                        <p>Selecciona tu tipo de contenido favorito</p>
+                        <div class="opciones">
+                            <input type="radio" name="opcion" value="contenidoCualquiera" checked> Cualquiera
+                            <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
+                            <input type="radio" name="opcion" value="contenidoVideos"> Videos
+                        </div>
+                        <input type="checkbox" name="noticiasCorreo" value="1">Quiero recibir ofertas de servicios y productos al correo electrónico
             </fieldset>
                 <div class="botones">
                     <button type="submit" onclick="redireccionar()">ENVIAR</button>
