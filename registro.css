@@ -153,6 +153,11 @@ body {
     text-align: center;
   }
 
+  .formulario .checkCorreo {
+    display: inline-flex;
+    align-items: flex-start;
+  }
+
   .formulario button {
     width: calc(100% - 3.2px);
     margin-bottom: 15px;
