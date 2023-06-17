@@ -34,10 +34,11 @@
         </nav>
     </header>
     <main>
-        <div>
+        <section> 
+            <!-- Formulario para registrarse -->
             <h1>Regístrate para recibir noticias al correo electrónico</h1>
             <form class="formulario" id="formulario">
-            <fieldset>
+                <fieldset>
                     <h2 class="titulo"><strong>INFORMACIÓN PERSONAL</strong></h2>
 
                     <p><label for="nombre">Nombre</label></p>
@@ -50,8 +51,8 @@
                     <input class="entrada" type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
 
                     <input type="checkbox" name="mayorEdad" value="1" required>Confirmo que tengo más de 18 años
-            </fieldset>
-            <fieldset>
+                </fieldset>
+                <fieldset>
                 <h2 class="titulo"><strong>PREFERENCIAS</strong></h2>
                     <p>Selecciona tu deporte favorito</p>
                         <select id="ligaFav" name="deporteFav">
@@ -72,16 +73,17 @@
                             <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
                             <input type="radio" name="opcion" value="contenidoVideos"> Videos
                         </div>
+                        <!-- Contenedor para organizar mejor visualmente el texto con el checkbox -->
                         <div class="checkCorreo">
                             <input type="checkbox" name="noticiasCorreo" value="1"><div>Quiero recibir ofertas de servicios y productos al correo electrónico</div>
                         </div>
-            </fieldset>
+                </fieldset>
                 <div class="botones">
                     <button type="submit" onclick="redireccionar()">ENVIAR</button>
                     <button type="reset">RESTABLECER</button>
                 </div>
             </form>
-        </div>
+        </section>
     </main>
     <footer>
         <p class="piePag"><b>© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</b></p>

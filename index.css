@@ -133,6 +133,8 @@ body {
     margin: 0;
   }
 
+    /* @keyframes utilizado para crear animaciones mediante la definición de un conjunto de estados clave de la animación y la transición entre ellos */
+
   @keyframes slide {
     0% {margin-left: 0%;}
     20% {margin-left: 0%;}

@@ -267,10 +267,14 @@ aside {
   text-align: center;
 }
 
-/* .tabla table
-  td:nth-child(2) {
-  text-align: left;
-  } */
+  /* Atributo para alinear a la izquierda solo la segunda columna de la tabla
+
+  .tabla table
+    td:nth-child(2) {
+    text-align: left;
+    } */
+  
+    /* Atributos para fijar el tamaño de la segunda columna en 30% y el resto de las columnas en 10%*/
 
   .tabla table
   th:nth-child(2),td:nth-child(2) {

@@ -277,6 +277,8 @@ section .noticia mark {
     margin-top: 5px;
   }
 
+    /* Atributos para fijar el tamaño de la segunda columna en 60% y el resto de las columnas en 20%*/
+
   .tabla table
   th:nth-child(2),td:nth-child(2) {
   width: 60%;

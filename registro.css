@@ -127,6 +127,8 @@ body {
     margin-bottom: 20px;
   }
 
+  /* Atributo para modificar el input cuando está checkeado, con el accent-color para modificar el color */
+
   input[type="checkbox"]:checked {
     accent-color: #88C426;
   }
