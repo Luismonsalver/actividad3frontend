@@ -90,6 +90,41 @@ body {
     color:#1C2833;
   }
 
+  .formulario {
+    width: 500px;
+    margin: auto;
+    font-family: 'Trebuchet MS';
+  }
+
+  .formulario fieldset {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #1C2833;
+    padding: 30px;
+  }
+
+  .formulario p {
+    margin: 0;
+  }
+
+  .formulario .titulo {
+    text-align: center;
+  }
+
+  .formulario .entrada {
+    width: calc(100% - 7.2px);
+  }
+
+  .formulario .botones {
+    text-align: center;
+  }
+
+  .formulario button {
+    width: calc(100% - 3.2px);
+    margin-bottom: 15px;
+  }
 
   .piePag {
     background-color:#1C2833;

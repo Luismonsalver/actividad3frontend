@@ -37,24 +37,22 @@
         <div>
             <h1>Regístrate para recibir noticias al correo electrónico</h1>
             <form class="formulario" id="formulario">
-                <fieldset>
-                    <p>Información personal</p>
-                <div>
+            <fieldset>
+                    <p class="titulo">Información personal</p>
+
                     <p><label for="nombre">Nombre:</label></p>
-                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                    <input class="entrada" type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
 
                     <p><label for="apellido">Apellido:</label></p>
-                    <input type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
+                    <input class="entrada" type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
 
                     <p><label for="email">Email:</label></p>
-                    <input type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
+                    <input class="entrada" type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
 
                     <p><input type="checkbox" name="mayorEdad" value="1" required>Confirmo que tengo más de 18 años</p>
-                </div>
-                </fieldset>
+            </fieldset>
             <fieldset>
-                <p>Preferencias</p>
-                <div>
+                <p class="titulo">Preferencias</p>
                     <p>Selecciona tu deporte favorito</p>
                         <select id="ligaFav" name="deporteFav">
                                 <option value="sinDeporte">No tengo deporte favorito</option>
@@ -74,11 +72,10 @@
                         <input type="radio" name="opcion" value="contenidoVideos"> Videos
 
                         <p><input type="checkbox" name="noticiasCorreo" value="1">Quiero recibir ofertas de servicios y productos al correo electrónico</p>
-                </div>
             </fieldset>
-                <div>
-                    <button type="submit" onclick="redireccionar()">Enviar</button>
-                    <button type="reset">Restablecer datos</button>
+                <div class="botones">
+                    <button type="submit" onclick="redireccionar()">ENVIAR</button>
+                    <button type="reset">RESTABLECER</button>
                 </div>
             </form>
         </div>
