@@ -48,17 +48,30 @@ body {
   }
 
 /* CABECERA  */
+  
+  nav {
+    background-color: #D5D8DC;
+  }
 
   nav .categorias {
     display: flex;
+    align-items: center;
     justify-content: center;
-    font: bold 20px Rockwell;
-    color: #1C2833;
-    margin:0;
-    padding: 10px;
-    background-color: #D5D8DC;
-  }
-  
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px 20px;
+    font-family: Rockwell;
+    width: 1000px;
+    margin: auto;
+   }
+
+  nav .animation {
+    display: flex;
+    animation: RightToLeft 20s infinite ease-in;
+    /* animation-play-state: paused; */
+   }
+
   nav .categorias li {
     list-style: none;
   }
@@ -68,9 +81,25 @@ body {
     color: #1C2833;
   }
   
+  nav .categorias p {
+    margin: 0;
+    margin-right: 10px;
+    color: #1C2833;
+    font-weight: bold;
+   }
+
   nav .categorias li:not(:last-child)::after {
     content: "•";
     margin: 0 10px;
+  }
+
+  @keyframes RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-110%);
+    }
   }
 
   main {
@@ -136,6 +165,10 @@ body {
     background-color: green;
   }
 
+  header {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -187,6 +220,56 @@ body {
     text-align: center;
   }
 
+  nav {
+    background-color: #D5D8DC;
+  }
+
+ nav .categorias {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: Rockwell;
+ }
+
+ nav .animation {
+  display: flex;
+  animation: RightToLeft 20s infinite ease-in;
+  animation-play-state: paused;
+ }
+
+ nav .categorias li {
+  list-style: none;
+ }
+
+ nav .categorias a {
+  text-decoration: none;
+  color: #1C2833;
+ }
+
+ nav .categorias p {
+  margin: 0;
+  margin-right: 10px;
+  color: #1C2833;
+  font-weight: bold;
+ }
+
+ nav .categorias li:not(:last-child)::after {
+  content: "•";
+  margin: 0 10px;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-110%);
+  }
+}
+
   /* nav .categorias {
     display: flex;
     justify-content: center;
@@ -211,13 +294,16 @@ body {
     margin: 0 10px;
   } */
 
+main {
+  width: 90%;
+  margin: auto;
+}
+
   .piePag {
     background-color:#1C2833;
     color:#EFEDED;
     font: bold 14px Arial;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 37px;
+    padding: 28px 30px;
     margin-bottom: 0;
     }
     
