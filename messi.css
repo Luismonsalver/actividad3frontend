@@ -278,3 +278,41 @@ aside {
   color: #85929E;
   font-family: Arial;
 }
+
+@media screen and (max-width:767px){
+
+  article {
+    padding: 0 5%;
+  }
+
+  .divisor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .noticia {
+  display: flex;
+  width: 90%;
+  font-family: 'Trebuchet MS';
+  padding: 0;
+  margin: 0;
+  border: none;
+  flex-wrap: wrap;
+}
+
+  aside {
+    width: 80%;
+  }
+
+  aside h3 {
+    text-align: center;
+  }
+
+  .pieArticulo {
+    padding-left: 5%;
+  }
+
+}

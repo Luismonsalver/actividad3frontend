@@ -6,11 +6,14 @@
     color:#1C2833;
   }
 
+  @media screen and (min-width:768px){
+
   .formulario {
     width: 500px;
     margin: auto;
     font-family: 'Trebuchet MS';
   }
+}
 
   .formulario fieldset {
     border: none;
@@ -61,10 +64,15 @@
     font-family: 'Calibri';
     font-weight: bold;
     color: #404444;
+    cursor: pointer;
   }
 
   .formulario .opciones {
     margin-bottom: 20px;
+  }
+
+  .opciones input {
+    cursor: pointer;
   }
 
   .formulario .botones {
@@ -84,5 +92,20 @@
     border-radius: 10px;
     background-color: #88C426;
     color: #F5F5F5;
-    font: bold 18px Calibri
+    font: bold 18px Calibri;
+    cursor: pointer;
   }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 767px) {
+
+  .formulario {
+    margin: auto;
+    font-family: 'Trebuchet MS';
+    padding: 0 5%;
+  }
+
+}
