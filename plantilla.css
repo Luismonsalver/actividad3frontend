@@ -1,0 +1,266 @@
+@media screen and (min-width: 1024px){
+
+body {
+    margin:0;
+    background-color: #F5F5F5;
+  }
+  
+  header {
+    width: 100%;
+  }
+
+  header .cabecera{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #1C2833;
+  }
+  
+  header .nombrePagina {
+    width: 448px;
+    padding: 20px 0 20px 30px;
+    margin: 0;
+  }
+
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  header .links {
+    padding: 13px 30px 16px 0;
+    font: bold 20px Georgia;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .links a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #515A5A;
+    border-radius: 2px;
+  }
+
+/* CABECERA  */
+
+  nav .categorias {
+    display: flex;
+    justify-content: center;
+    font: bold 20px Rockwell;
+    color: #1C2833;
+    margin:0;
+    padding: 10px;
+    background-color: #D5D8DC;
+  }
+  
+  nav .categorias li {
+    list-style: none;
+  }
+  
+  nav .categorias a {
+    text-decoration: none;
+    color: #1C2833;
+  }
+  
+  nav .categorias li:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px;
+  }
+
+  main {
+    width: 1000px;
+    margin: auto;
+  } 
+
+  .piePag {
+    background-color:#1C2833;
+    color:#EFEDED;
+    font: bold 14px Arial;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 37px;
+    margin-bottom: 0;
+    }
+    
+    .contacto {
+      text-align: center;
+      background-color: #D5D8DC;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+    
+    .contacto p {
+      margin: 0;
+      padding-bottom: 15px;
+      font: bold 25px Calibri;
+    }
+    
+    .contacto ul {
+      margin: 0;
+    }
+    
+    .contacto ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0;
+      font-size: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      font: 20px Calibri;
+    }
+    
+    .contacto img {
+      height: 25px;
+      width: auto;
+      margin-right: 7px;
+    }
+    
+    .contacto a {
+      text-decoration: none;
+      color: #000000;
+      display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  body {
+    margin:0;
+    background-color: green;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  body {
+    margin:0;
+    background-color: #F5F5F5;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C2833;
+  }
+
+  .cabecera .nombrePagina {
+    width: 60%;
+    height: auto;
+    padding: 4% 0 4% 2%;
+  }
+
+  .cabecera img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cabecera .links {
+    padding: 0;
+    font: bold 60% Georgia;
+    display: flex;
+    align-items: center;
+  }
+
+  .cabecera .links a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #515A5A;
+    border-radius: 2px;
+  }
+
+  /* nav .categorias {
+    display: flex;
+    justify-content: center;
+    font: bold 50% Rockwell;
+    color: #1C2833;
+    margin:0;
+    padding: 10px;
+    background-color: #D5D8DC;
+  }
+  
+  nav .categorias li {
+    list-style: none;
+  }
+  
+  nav .categorias a {
+    text-decoration: none;
+    color: #1C2833;
+  }
+  
+  nav .categorias li:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px;
+  } */
+
+  .piePag {
+    background-color:#1C2833;
+    color:#EFEDED;
+    font: bold 14px Arial;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 37px;
+    margin-bottom: 0;
+    }
+    
+    .contacto {
+      text-align: center;
+      background-color: #D5D8DC;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+    
+    .contacto p {
+      margin: 0;
+      padding-bottom: 15px;
+      font: bold 25px Calibri;
+    }
+    
+    .contacto ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .contacto ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0;
+      font-size: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      font: 20px Calibri;
+    }
+    
+    .contacto img {
+      height: 25px;
+      width: auto;
+      margin-right: 7px;
+    }
+    
+    .contacto a {
+      text-decoration: none;
+      color: #000000;
+      display: inline-flex;
+    }
+
+}
