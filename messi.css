@@ -279,14 +279,49 @@ aside {
   font-family: Arial;
 }
 
+/* TABLET DISPLAY ============================================================================================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .tabla table
+  th:nth-child(4),td:nth-child(4),
+  th:nth-child(5),td:nth-child(5),
+  th:nth-child(6),td:nth-child(6) {
+  display: none;
+  }
+
+.tabla table
+th:nth-child(1),td:nth-child(1),
+th:nth-child(3),td:nth-child(3),
+th:nth-child(7),td:nth-child(7) {
+width: 20%;
+}
+
+.tabla table
+th:nth-child(1),td:nth-child(2) {
+  width: 40%;
+}
+
+}
+
+/* MOBILE DISPLAY ============================================================================================================================== */
+
 @media screen and (max-width:767px){
 
-  .divisor {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+  article .tituloArticulo h1{
+    font:bold 30px Segoe UI;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color:#1C2833;
+   }
+
+
+.divisor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 section .noticia {
@@ -305,6 +340,16 @@ section .noticia {
 
   aside h3 {
     text-align: center;
+  }
+
+  .tabla {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .tabla .pieTabla {
+    padding: 5px;
   }
 
   .pieArticulo {

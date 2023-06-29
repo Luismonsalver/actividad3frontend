@@ -1,3 +1,7 @@
+nav{
+  display: none;
+}
+
   h1 {
     font-family: Didot;
     padding-bottom: 15px;
@@ -6,6 +10,7 @@
     color:#1C2833;
   }
 
+  
   @media screen and (min-width:768px){
 
   .formulario {
