@@ -56,20 +56,19 @@ body {
   nav .categorias {
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-family: Rockwell;
-    width: 1000px;
+    width: calc(1000px - 60px);
     margin: auto;
    }
 
   nav .animation {
     display: flex;
-    animation: RightToLeft 20s infinite ease-in;
-    /* animation-play-state: paused; */
+    animation: RightToLeft 30s infinite ease-in;
+    animation-play-state: start;
    }
 
   nav .categorias li {
@@ -232,12 +231,13 @@ body {
   margin: 0;
   padding: 10px 20px;
   font-family: Rockwell;
+  margin: 0 10px;
  }
 
  nav .animation {
   display: flex;
-  animation: RightToLeft 20s infinite ease-in;
-  animation-play-state: paused;
+  animation: RightToLeft 30s infinite ease-in;
+  animation-play-state: start;
  }
 
  nav .categorias li {
@@ -269,30 +269,6 @@ body {
     transform: translateX(-110%);
   }
 }
-
-  /* nav .categorias {
-    display: flex;
-    justify-content: center;
-    font: bold 50% Rockwell;
-    color: #1C2833;
-    margin:0;
-    padding: 10px;
-    background-color: #D5D8DC;
-  }
-  
-  nav .categorias li {
-    list-style: none;
-  }
-  
-  nav .categorias a {
-    text-decoration: none;
-    color: #1C2833;
-  }
-  
-  nav .categorias li:not(:last-child)::after {
-    content: "•";
-    margin: 0 10px;
-  } */
 
 main {
   width: 90%;
