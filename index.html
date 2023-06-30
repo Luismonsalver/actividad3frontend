@@ -15,13 +15,93 @@
 <body>
     <header>
         <div class="cabecera">
-            <div class="nombrePagina">
-                <a href="index.html"><img src="media/images/Logopagina.png" alt="Logo de la pagina"></a>
-            </div>
-            <div class="links">
-                <a href="registro.html">Regístrate</a>
-            </div>
+
+                <a href="index.html"><img src="media/images/Logopagina.png" alt="Logo de la pagina" class="nombrePagina"></a>
+
+                <a href="#menu" class="navMenu">
+                    <img src="media/icons/menu.png" class="navIcon">
+                </a>
+
+                <a href="#" class="navMenu navMenu--second">
+                    <img src="media/icons/logout.png" class="navIcon">
+                </a>
+
+                <ul class="desplegable" id="menu">
+                    <li class="lista">
+                        <a href="index.html" class="link">
+                            <span class="span">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="lista">
+                        <a href="#" class="link">
+                            <span class="span">Categorías</span>
+                            <img src="media/icons/arrow.png" class="arrow"> 
+
+                            <input type="checkbox" class="check">
+                        </a>
+
+                        <div class="contenido">
+
+                            <ul class="subMenu">
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Fútbol</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Béisbol</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Básquetbol</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Automovilismo</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Boxeo</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="#" class="ancla">Tenis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="lista">
+                        <a href="#" class="link">
+                            <span class="span">Contacto</span>
+                            <img src="media/icons/arrow.png" class="arrow"> 
+
+                            <input type="checkbox" class="check">
+                        </a>
+
+                        <div class="contenido">
+
+                            <ul class="subMenu">
+                                <li class="subLi">
+                                    <a href="https://www.instagram.com/"  class="ancla">Instagram: diariouvmsport</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="https://www.facebook.com/" class="ancla">Facebook: Diario UVM Sport</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="https://www.twitter.com/" class="ancla">Twitter: @diariouvmsport</a>
+                                </li>
+                                <li class="subLi">
+                                    <a href="https://www.youtube.com/" class="ancla">YouTube: Diario UVM Sport</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="lista">
+                        <a href="registro.html" class="link">
+                            <span class="span">Registro</span>
+                        </a>
+                    </li>
+                </ul>
+
         </div>
+    </header>
         <nav>
             <ul class="categorias">
                 <div class="animation">
@@ -36,14 +116,6 @@
                 </div>
               </ul>
         </nav>
-                            <!-- <li><a href="#">FÚTBOL</a></li>
-                    <li><a href="#">BÁSQUETBOL</a></li>
-                    <li><a href="#">BÉISBOL</a></li>
-                    <li><a href="#">AUTOMOVILISMO</a></li>
-                    <li><a href="#">TENIS</a></li>
-                    <li><a href="#">ATLETISMO</a></li>
-                    <li><a href="#">BOXEO</a></li> -->
-    </header>
         <main>
             <h1>Todas las noticias del mundo de los deportes</h1>
             <!-- Slider para que las noticias se deslicen -->
