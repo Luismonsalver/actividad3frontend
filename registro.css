@@ -2,15 +2,36 @@ nav{
   display: none;
 }
 
+main {
+  width: 100%;
+}
+
   h1 {
-    font-family: Didot;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #1C2833;
+    font-family: Helvetica;
+    /* border-bottom: 2px solid #1C2833; */
     text-align: center;
-    color:#1C2833;
+    /* color:#1C2833; */
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 15px rgb(0, 0, 0, 1);
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
   }
 
+  .parallax {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: center fixed url("./media/images/footballbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
+  .formSection {
+    margin-top: 30px;
+  }
+
   @media screen and (min-width:768px){
 
   .formulario {
@@ -108,8 +129,8 @@ nav{
 @media screen and (max-width: 767px) {
 
   .formulario {
+    width: 80%;
     margin: auto;
     font-family: 'Trebuchet MS';
   }
-
 }
